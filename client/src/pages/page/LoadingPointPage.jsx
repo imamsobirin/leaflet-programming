@@ -1,8 +1,7 @@
-import MapJs from "./MapJs";
+import MapJs from "../map/MapJs";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import LeftMenu from "./LeftMenu";
-import PopInputForm from "./PopInputForm";
+import LeftMenu from "../sidebar/LeftMenu";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
@@ -69,8 +68,8 @@ function LoadingPoint() {
 
   return (
     <>
-      <div className="">
-        <div className="w-screen h-screen grid grid-cols-[1fr_3fr]">
+      <div className="w-full h-screen flex flex-row">
+        <div className="w-1/3">
           <LeftMenu
             filterDate={filterDate}
             setFilterDate={setFilterDate}
@@ -81,7 +80,8 @@ function LoadingPoint() {
             deleteLoadingPoint={deleteLoadingPoint}
             updateLoadingPoint={updateLoadingPoint}
           />
-
+        </div>
+        <div className="w-2/3">
           <MapJs
             filterDate={filterDate}
             filterShift={filterShift}

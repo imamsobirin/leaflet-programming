@@ -1,6 +1,4 @@
-import LoadingPoint from "./pages/loadingPointPage/LoadingPointPage.jsx";
-import MapJs from "./pages/loadingPointPage/MapJs.jsx";
-import Sidebar from "./pages/sidebar/Sidebar.jsx";
+import LoadingPoint from "./pages/page/LoadingPointPage.jsx";
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import Sidebar from "../sidebar/Sidebar";
-import FilterDateAndShift from "./FilterDateAndShift";
-import LoaderInputForm from "./LoaderInputForm";
-import LoadingPointTable from "./LoadingPointTable";
+import Sidebar from "./Sidebar";
+import FilterDateAndShift from "../loadingPointMenu/FilterDateAndShift";
+import LoaderInputForm from "../loadingPointMenu/LoaderInputForm";
+import LoadingPointTable from "../loadingPointMenu/LoadingPointTable";
 // import PopInputForm from "./PopInputForm";
 // import { useState } from "react";
 import { useState } from "react";
@@ -21,14 +21,14 @@ function LeftMenu({
   const [menuIndex, setMenuIndex] = useState(0);
 
   return (
-    <div className="flex flex-row bg-red-500 w-full">
-      <div className="min-w-1/5 border border-red-500">
-        <Sidebar setMenuIndex={setMenuIndex} />
+    <div className="flex flex-row w-full h-full">
+      <div className="w-1/6 border ">
+        <Sidebar setMenuIndex={setMenuIndex} menuIndex={menuIndex} />
       </div>
-      <div className="menu-span bg-blue-500 w-full">
+      <div className="menu-span  w-5/6">
         {menuIndex === 0 && (
           <>
-            <div className="dumping-point flex flex-col gap-1">
+            <div className="dumping-point flex flex-col gap-1 ">
               <FilterDateAndShift
                 className="w-full"
                 filterDate={filterDate}
@@ -37,13 +37,9 @@ function LeftMenu({
                 setFilterShift={setFilterShift}
                 handleFilterDateChange={handleFilterDateChange}
               />
-              <button
-                // onClick={() => setShowPopup(true)}
-                className="h-10 rounded-md bg-blue-500 font-bold text-white p-0 mx-2"
-              >
+              <button className="h-10 rounded-md bg-blue-500 font-bold text-white p-0 mx-2">
                 Input Loading Point
               </button>
-              {/* {showPopup && <PopInputForm setShowPopup={setShowPopup} />} */}
 
               <LoaderInputForm handleUpdate={handleFilterDateChange} />
               <LoadingPointTable
