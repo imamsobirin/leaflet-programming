@@ -86,9 +86,9 @@ function LoaderInputForm({ handleUpdate }) {
 
   return (
     <>
-      <form action="" className="p-2 bg-blue-100">
-        <div className="input-group w-full gap-1 flex flex-row">
-          <div className="input-field flex flex-col  py-1 w-2/3">
+      <form action="" className="p-2 bg-blue-100 w-full">
+        <div className="input-group w-full flex flex-row ">
+          <div className="input-field flex flex-col  p-1 w-2/3">
             <label className="font-bold text-md pb-1" htmlFor="loader">
               Loader
             </label>
@@ -117,7 +117,7 @@ function LoaderInputForm({ handleUpdate }) {
               <option value="HEX-458">HEX-458</option>
             </select>
           </div>
-          <div className="input-field flex flex-col  py-1 w-1/3">
+          <div className="input-field flex flex-col  p-1 w-1/3">
             <label className="font-bold text-md pb-1" htmlFor="activity">
               Activity
             </label>
@@ -137,8 +137,8 @@ function LoaderInputForm({ handleUpdate }) {
             </select>
           </div>
         </div>
-        <div className="input-group w-full gap-1 flex flex-row">
-          <div className="input-field flex flex-col  py-1 w-2/3">
+        <div className="input-group w-full flex flex-row ">
+          <div className="input-field flex flex-col  p-1 w-2/3">
             <label className="font-bold text-md pb-1" htmlFor="date">
               Date
             </label>
@@ -150,7 +150,7 @@ function LoaderInputForm({ handleUpdate }) {
               onChange={handleInputChange}
             />
           </div>
-          <div className="input-field flex flex-col  py-1 w-1/3">
+          <div className="input-field flex flex-col  p-1 w-1/3">
             <label className="font-bold text-md pb-1" htmlFor="date">
               Shift
             </label>
@@ -169,8 +169,8 @@ function LoaderInputForm({ handleUpdate }) {
             </select>
           </div>
         </div>
-        <div className="input-group w-full gap-1 flex flex-row">
-          <div className="input-field flex flex-col  py-1 w-1/3">
+        <div className="input-group w-full  flex flex-row ">
+          <div className="input-field flex flex-col  py-1 w-1/3 p-1">
             <label className="font-bold text-md pb-1" htmlFor="elevasi">
               Elevasi
             </label>
@@ -183,7 +183,7 @@ function LoaderInputForm({ handleUpdate }) {
               onChange={handleInputChange}
             />
           </div>
-          <div className="input-field flex flex-col py-1 w-1/3">
+          <div className="input-field flex flex-col py-1 w-1/3 p-1">
             <label className="font-bold text-md pb-1" htmlFor="latitude">
               Latitude
             </label>
@@ -196,7 +196,7 @@ function LoaderInputForm({ handleUpdate }) {
               onChange={handleInputChange}
             />
           </div>
-          <div className="input-field flex flex-col py-1 w-1/3">
+          <div className="input-field flex flex-col py-1 w-1/3 p-1">
             <label className="font-bold text-md pb-1" htmlFor="longitude">
               Longitude
             </label>
@@ -211,8 +211,8 @@ function LoaderInputForm({ handleUpdate }) {
             />
           </div>
         </div>
-        <div className="input-group w-full gap-1 flex flex-row">
-          <div className="input-field flex flex-col py-1">
+        <div className="input-group w-full flex flex-row">
+          <div className="input-field flex flex-col py-1 w-1/3 px-1">
             <label className="font-bold text-md pb-1" htmlFor="loadingPoint">
               Loading Point
             </label>
@@ -225,7 +225,7 @@ function LoaderInputForm({ handleUpdate }) {
               onChange={handleInputChange}
             />
           </div>
-          <div className="input-field flex flex-col py-1">
+          <div className="input-field flex flex-col py-1 w-1/3 px-1">
             <label className="font-bold text-md pb-1" htmlFor="dumpingPoint">
               Dumping Point
             </label>
@@ -238,7 +238,7 @@ function LoaderInputForm({ handleUpdate }) {
               onChange={handleInputChange}
             />
           </div>
-          <div className="input-field flex flex-col py-1">
+          <div className="input-field flex flex-col py-1 w-1/3 px-1">
             <label className="font-bold text-md pb-1" htmlFor="distance">
               Distance
             </label>
